@@ -30,6 +30,7 @@ services:
       REQ_TIMEOUT: "2000"
       NODE_ENV: production
       PORT: 8080
+      APP_NAME: "rinha-de-backend-js"
     network_mode: host
     depends_on:
       - postgres
@@ -53,6 +54,7 @@ services:
       PINO_LOG_LEVEL: "debug"
       REQ_TIMEOUT: "2000"
       PORT: 8081
+      APP_NAME: "rinha-de-backend-js"
 
   nginx:
     image: nginx:latest

@@ -2,11 +2,11 @@
 
 const pg = require('pg');
 
-const { logger } = require('@config/logger');
+const logger = require('@config/logger');
 const config = require('@config/config');
 const pool = new pg.Pool({
   connectionString: config.db.url,
-  max: 70,
+  max: config.db.pool,
   idleTimeoutMillis: 0,
   connectionTimeoutMillis: 10_000
 });
