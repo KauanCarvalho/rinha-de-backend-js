@@ -1,0 +1,8 @@
+{
+  "apps": [{
+    "name": "rinha-de-backend-js",
+    "script": "app.js",
+    "instances": "5",
+    "exec_mode": "cluster"
+  }]
+}
