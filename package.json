@@ -7,11 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "_moduleAliases": {
-    "@config": "config",
-    "@controllers": "app/controllers",
-    "@middlewares": "config/middlewares",
+    "@app": "app",
+    "@middlewares": "app/middlewares",
     "@root": ".",
-    "@routers": "config/routers"
+    "@routers": "app/routers"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

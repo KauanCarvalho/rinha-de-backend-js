@@ -1,6 +1,6 @@
 'use-strict';
 
-const config = require('@config/config');
+const config = require('@app/config');
 const pino = require('pino');
 
 const logger = pino({

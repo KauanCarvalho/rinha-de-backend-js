@@ -1,7 +1,7 @@
 'use-strict';
 
 const { Router } = require('express');
-const { peopleCount } = require('@config/database');
+const { peopleCount } = require('@app/database');
 
 const rootRouter = Router();
 

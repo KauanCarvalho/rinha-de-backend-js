@@ -2,8 +2,8 @@
 
 const pg = require('pg');
 
-const logger = require('@config/logger');
-const config = require('@config/config');
+const logger = require('@app/logger');
+const config = require('@app/config');
 const pool = new pg.Pool({
   connectionString: config.db.url,
   max: config.db.pool,
@@ -47,11 +47,11 @@ module.exports.insertPerson = async function (id, { apelido, nome, nascimento, s
       $2,
       $3,
       $4,
-      $5::json
+      $5
     )
   `;
 
-  return pool.query(query, [id, apelido, nome, nascimento, JSON.stringify(stack)]);
+  return pool.query(query, [id, apelido, nome, nascimento, stack]);
 };
 
 module.exports.findPersonById = async function findPersonById(id) {

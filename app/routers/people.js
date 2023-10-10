@@ -3,7 +3,7 @@
 const { Router } = require('express');
 const { v4: uuidv4 } = require('uuid');
 const { validationFilter } = require('@middlewares/payload');
-const { insertPerson, findPersonById, finPeopledByTerm } = require('@config/database');
+const { insertPerson, findPersonById, finPeopledByTerm } = require('@app/database');
 
 const peopleRouter = Router();
 
