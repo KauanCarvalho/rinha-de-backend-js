@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const config = {
   app: {
-    port: process.env.PORT || 8080
+    port: process.env.PORT
   },
   db: {
     url: process.env.DB_URL
